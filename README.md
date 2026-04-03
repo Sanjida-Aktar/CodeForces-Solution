@@ -1,15 +1,15 @@
 # My Roadmap for problem solution on codeforces problem
 
 ## 🟢 Level 1 – একদম Easy (শুরু করার জন্য)
-5. 4A – Watermelon → even number check
+1. 4A – Watermelon → even number check
 
-4. 71A – Way Too Long Words → string ছোট করা
+2. 71A – Way Too Long Words → string ছোট করা
 
 3. 282A – Bit++ → variable increment/decrement
 
-2. 231A – Team → condition count করা
+4. 231A – Team → condition count করা
 
-1. 50A – Domino piling → simple math
+5. 50A – Domino piling → simple math
 
 ## 🟡 Level 2 – Array Practice
 1. 158A – Next Round → array থেকে কতজন qualify করেছে
