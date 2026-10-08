@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-long long digitSum(long long n) {
-    long long sum = 0;
+int digitSum(int n) {
+    int sum = 0;
     while (n > 0) {
         sum += n % 10;
         n /= 10;
@@ -11,15 +11,16 @@ long long digitSum(long long n) {
 }
 
 int main(){
-    
-     long long n;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+     int n;
      cin>>n;
      while(n--){
-        long long x;
+        int x;
         cin>>x;
-        long long count=0;
+        int count=0;
         
-        for(long long i=x; i<=x+90; i++)
+        for(int i=x; i<=x+90; i++)
         {
            if(i-digitSum(i)==x)
            {
