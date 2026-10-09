@@ -1,33 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int digitSum(int n) {
-    int sum = 0;
-    while (n > 0) {
-        sum += n % 10;
-        n /= 10;
-    }
-    return sum;
-}
-
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-     int n;
-     cin>>n;
-     while(n--){
-        int x;
-        cin>>x;
-        int count=0;
-        
-        for(int i=x; i<=x+90; i++)
+     int t;
+     cin>>t;
+     while(t--)
+     {
+        int l,r;
+        cin>>l>>r;
+        if(l==r)
         {
-           if(i-digitSum(i)==x)
-           {
-            count++;
-           }
+            cout<<l<<endl;
         }
-        cout<<count<<endl;
+        else
+        {
+           int sum=l;
+           int count=1;
+           int diff = 1;
+            while(sum+diff<=r)
+            {
+                sum+=diff;
+                count++;
+                diff++;
+            }
+            cout<<count<<endl;
+        }
      }
     return 0;
 }
